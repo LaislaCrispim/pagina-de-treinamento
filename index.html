@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainCraft - Inovação em Treinamento Corporativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Navegação Principal -->
+    <nav class="navbar fixed top-0 w-full z-50 px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-8">
+            <h1 class="text-2xl font-bold text-blue-500">Train<span class="text-white">Craft</span></h1>
+            <div class="hidden lg:flex space-x-6">
+                <a href="#" class="text-gray-300 hover:text-blue-600 transition">Início</a>
+                <a href="#" class="text-gray-300 hover:text-blue-600 transition">Categorias</a>
+                <a href="#" class="text-gray-300 hover:text-blue-600 transition">Minha Empresa</a>
+                <a href="#" class="text-gray-300 hover:text-blue-600 transition">Relatórios</a>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <div class="relative">
+                <input type="text" placeholder="Buscar treinamentos..." class="bg-black bg-opacity-70 px-4 py-1 rounded text-white placeholder-gray-400 focus:outline-none focus:border-blue-500">
+            </div>
+            <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold cursor-pointer">TC</div>
+        </div>
+    </nav>
+
+    <!-- Seção Principal (Hero) -->
+    <section class="relative h-screen overflow-hidden pt-16">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/55b0ce6b-6274-4be4-93b7-c7c48edcd733.png" alt="Grupo diversificado de profissionais em uma sala de treinamento corporativo moderna, sorrindo enquanto assistem a uma apresentação" class="w-full h-full object-cover">
+        
+        <div class="absolute inset-0 gradient-overlay flex items-center">
+            <div class="container mx-auto px-8 lg:px-16">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Treinamentos que <span class="text-blue-500 transform">transformam</span> sua equipe</h1>
+                <p class="text-xl mb-8 max-w-2xl">Plataforma de aprendizagem corporativa com mais de 500 cursos em liderança, vendas, tecnologia e soft skills.</p>
+                <div class="flex space-x-4">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold flex items-center transition">
+                        <span>Assistir Demonstração</span>
+                    </button>
+                    <button class="bg-gray-900 bg-opacity-70 hover:bg-opacity-90 text-white px-8 py-3 rounded font-semibold flex items-center transition">
+                        <span>Saber Mais</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção "Continue Assistindo" -->
+    <section class="py-12 px-8">
+        <h2 class="text-2xl font-bold mb-6">Continue Assistindo</h2>
+        <div class="carousel-container flex overflow-x-auto pb-4 space-x-4">
+            <!-- Cartões de Treinamento -->
+            <div class="training-card flex-shrink-0 w-64 bg-gray-800 rounded overflow-hidden cursor-pointer relative group">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1b42a4f3-030c-43ef-9384-c770405b7f9f.png" alt="Instrutor ensinando técnicas de liderança para uma equipe corporativa" class="w-full h-36 object-cover">
+                <div class="progress-bar w-full absolute bottom-0"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold truncate">Liderança de Alta Performance</h3>
+                    <p class="text-gray-400 text-sm mt-1">65% concluído</p>
+                </div>
+            </div>
+            
+            <div class="training-card flex-shrink-0 w-64 bg-gray-800 rounded overflow-hidden cursor-pointer relative group">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5c6510f9-af49-4ee5-b487-9ca94a7bac48.png" alt="Workshop de comunicação eficaz em ambiente corporativo" class="w-full h-36 object-cover">
+                <div class="progress-bar w-1/2 absolute bottom-0"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold truncate">Comunicação Assertiva</h3>
+                    <p class="text-gray-400 text-sm mt-1">42% concluído</p>
+                </div>
+            </div>
+            
+            <div class="training-card flex-shrink-0 w-64 bg-gray-800 rounded overflow-hidden cursor-pointer relative group">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/928adce4-122e-4685-9209-b297ac32c650.png" alt="Treinamento prático de técnicas de vendas em um ambiente de varejo" class="w-full h-36 object-cover">
+                <div class="progress-bar w-1/4 absolute bottom-0"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold truncate">Técnicas Avançadas de Vendas</h3>
+                    <p class="text-gray-400 text-sm mt-1">25% concluído</p>
+                </div>
+            </div>
+            
+            <div class="training-card flex-shrink-0 w-64 bg-gray-800 rounded overflow-hidden cursor-pointer relative group">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/768a8e17-3ac5-4714-a350-a023ed049110.png" alt="Consultor apresentando análise de dados em telas para executivos" class="w-full h-36 object-cover">
+                <div class="progress-bar w-3/4 absolute bottom-0"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold truncate">Data Storytelling</h3>
+                    <p class="text-gray-400 text-sm mt-1">72% concluído</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias de Treinamento -->
+    <section class="py-12 px-8 bg-gray-900 bg-opacity-50">
+        <h2 class="text-2xl font-bold mb-8">Conheça Nossas Categorias</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="category-card bg-gray-800 rounded-lg overflow-hidden cursor-pointer transition hover:bg-gray-700">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cf22870d-a03b-4e47-b966-ca2e4092b4c4.png" alt="Grupo multicultural de líderes em reunião estratégica" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Liderança</h3>
+                    <p class="text-gray-300">Desenvolva líderes inspiradores para sua organização</p>
+                    <span class="inline-block mt-3 text-blue-400 font-medium">27 cursos</span>
+                </div>
+            </div>
+            
+            <div class="category-card bg-gray-800 rounded-lg overflow-hidden cursor-pointer transition hover:bg-gray-700">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/05febbb5-6055-43d4-9fde-566ef5943e17.png" alt="Equipe de vendas analisando métricas em dashboard" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Vendas</h3>
+                    <p class="text-gray-300">Técnicas comprovadas para aumentar suas conversões</p>
+                    <span class="inline-block mt-3 text-blue-400 font-medium">43 cursos</span>
+                </div>
+            </div>
+            
+            <div class="category-card bg-gray-800 rounded-lg overflow-hidden cursor-pointer transition hover:bg-gray-700">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8d0dca52-2409-4dcc-ab68-fdcce77c68dc.png" alt="Profissionais digitando em laptops modernos em escritório high-tech" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Tecnologia</h3>
+                    <p class="text-gray-300">Digitalize sua empresa com as melhores práticas</p>
+                    <span class="inline-block mt-3 text-red-400 font-medium">35 cursos</span>
+                </div>
+            </div>
+            
+            <div class="category-card bg-gray-800 rounded-lg overflow-hidden cursor-pointer transition hover:bg-gray-700">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c4a5d901-1b37-4e4a-b515-1b610d1bd147.png" alt="Equipe multicultural colaborando em ambiente de trabalho moderno" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Soft Skills</h3>
+                    <p class="text-gray-300">Desenvolva competências essenciais para o futuro</p>
+                    <span class="inline-block mt-3 text-red-400 font-medium">31 cursos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treinamentos Populares -->
+    <section class="py-12 px-8">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Treinamentos em Alta</h2>
+            <button class="text-blue-500 font-medium hover:text-blue-400 transition">Ver Todos</button>
+        </div>
+        
+        <div class="carousel-container flex overflow-x-auto pb-4 space-x-4">
+            <!-- Training Cards -->
+            <div class="training-card flex-shrink-0 w-64 bg-gray-800 rounded overflow-hidden cursor-pointer">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62d89a12-090e-4e48-9f57-ecb54b57f590.png" alt="Executivo apresentando análise de KPIs para equipe" class="w-full h-36 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-semibold">Gestão por Indicadores</h3>
+                        <span class="text-yellow-400 text-xs bg-yellow-900 bg-opacity-60 px-2 py-1 rounded">NOVO</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-1">Professor: Carlos Meireles</p>
+                    <div class="flex mt-3">
+                        <span class="bg-blue-900 text-blue-400 text-xs px-2 py-1 rounded mr-2">Liderança</span>
+                        <span class="text-gray-400 text-xs">4h 25m</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="training-card flex-shrink-0 w-64 bg-gray-800 rounded overflow-hidden cursor-pointer">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/94e32d33-3877-4074-b2e1-8ea3188511ce.png" alt="Workshop de matriz SWOT com post-its coloridos" class="w-full h-36 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">Planejamento Estratégico</h3>
+                    <p class="text-gray-400 text-sm mt-1">Professora: Ana Beatriz</p>
+                    <div class="flex mt-3">
+                        <span class="bg-blue-900 text-blue-400 text-xs px-2 py-1 rounded mr-2">Gestão</span>
+                        <span class="text-gray-400 text-xs">3h 10m</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="training-card flex-shrink-0 w-64 bg-gray-800 rounded overflow-hidden cursor-pointer">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3bf147d9-712f-43bc-a593-e759955843e7.png" alt="Equipe de desenvolvimento ágil em retrospectiva" class="w-full h-36 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">OKRs e Agile</h3>
+                    <p class="text-gray-400 text-sm mt-1">Professor: Luiz Otávio</p>
+                    <div class="flex mt-3">
+                        <span class="bg-purple-900 text-purple-400 text-xs px-2 py-1 rounded mr-2">Tecnologia</span>
+                        <span class="text-gray-400 text-xs">5h 15m</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="training-card flex-shrink-0 w-64 bg-gray-800 rounded overflow-hidden cursor-pointer">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/41d27960-5d8c-4112-9899-ef34c15af182.png" alt="Consultor ensinando técnicas avançadas de negociação" class="w-full h-36 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-semibold">Negociação Avançada</h3>
+                        <span class="text-green-400 text-xs bg-green-900 bg-opacity-60 px-2 py-1 rounded">TOP</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-1">Professora: Marcela Prado</p>
+                    <div class="flex mt-3">
+                        <span class="bg-green-900 text-green-400 text-xs px-2 py-1 rounded mr-2">Vendas</span>
+                        <span class="text-gray-400 text-xs">4h 50m</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos para Empresas -->
+    <section class="py-16 px-8 bg-gradient-to-r from-gray-900 to-gray-800">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Soluções para Empresas</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-gray-800 bg-opacity-70 rounded-lg p-6 hover:bg-opacity-90 transition">
+                    <div class="w-12 h-12 bg-blue-600 rounded-md flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Gestão da Aprendizagem</h3>
+                    <p class="text-gray-300">Monitore o progresso dos colaboradores e gere relatórios detalhados por departamento.</p>
+                </div>
+                
+                <div class="feature-card bg-gray-800 bg-opacity-70 rounded-lg p-6 hover:bg-opacity-90 transition">
+                    <div class="w-12 h-12 bg-red-600 rounded-md flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Conteúdo Personalizado</h3>
+                    <p class="text-gray-300">Inclua seus próprios treinamentos e políticas corporativas na plataforma.</p>
+                </div>
+                
+                <div class="feature-card bg-gray-800 bg-opacity-70 rounded-lg p-6 hover:bg-opacity-90 transition">
+                    <div class="w-12 h-12 bg-red-600 rounded-md flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Certificados</h3>
+                    <p class="text-gray-300">Emissão automática de certificados com logomarca da empresa para cursos concluídos.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button class="bg-white hover:bg-gray-100 text-black px-10 py-4 rounded-full font-semibold transition">
+                    Fale com nosso time corporativo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-black bg-opacity-90 py-12 px-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Train<span class="text-blue-500">Craft</span></h3>
+                <p class="text-gray-400">Transformando profissionais através do aprendizado criativo.</p>
+            </div>
+            
+            <div>
+                <h4 class="text-gray-300 font-semibold mb-4">Empresa</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Sobre</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Carreiras</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Cases</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-gray-300 font-semibold mb-4">Recursos</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Central de Ajuda</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">API para RH</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Eventos</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-gray-300 font-semibold mb-4">Jurídico</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Termos de Uso</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Privacidade</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Cookies</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">LGPD</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container mx-auto mt-12 pt-8 border-t border-gray-800">
+            <p class="text-gray-500 text-center text-sm">© 2023 TrainCraft. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
